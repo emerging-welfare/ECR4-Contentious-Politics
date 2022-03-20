@@ -5,17 +5,16 @@ In order to run the scripts, first create an environment and activate;
 ```
 conda create --name ecr4 python=3.8 && conda activate ecr4
 ```
-Then install the required packages;
-```
-conda install --file requirements.txt
-```
 Before moving forward to train or test models, first you need the download the data and code repos.
 The dataset is shared in [`coreference_data`](https://github.com/emerging-welfare/coreference_data) repo of our project, __emerging-welfare__.
 ```
 git clone https://github.com/emerging-welfare/coreference_data.git
 git clone https://github.com/emerging-welfare/ECR4-Contentious-Politics.git
 ```
-
+Then go to ECR4 repo and install the required packages;
+```
+pip install -r requirements.txt
+```
 To train a model from scratch, go to `scripts` folder and run `train.py`. For example you can run the following command in order to train a model for `english`, `spanish` and `portuguese` mix dataset;
 ```
 python train.py --train_dataset_paths en_es_pr --dev_dataset_paths en_es_pr --test_dataset_paths en_es_pr

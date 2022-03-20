@@ -77,7 +77,7 @@ def main(args):
     trainer.fit(model)
     trainer.test(model)
 
-    print("\nTraining is done model saved at: ../models/{EXPERIMENT_ID}.ckpt")
+    print(f"\nTraining is done model saved at: ../models/{EXPERIMENT_ID}.ckpt")
 
 if __name__ == "__main__":
 
