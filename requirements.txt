@@ -1,0 +1,5 @@
+pytorch_lightning==1.5.9
+torch==1.10.2
+scorch==0.2.0
+transformers==4.16.2
+torchmetrics==0.7.0
